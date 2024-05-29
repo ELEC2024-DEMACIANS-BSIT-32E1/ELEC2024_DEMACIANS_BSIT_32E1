@@ -7,17 +7,14 @@
     background-image: url("../images/bgggg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 .Personality_Page {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     width: 100%;
     height: 90vh;
     position: relative;
@@ -27,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 22%;
     position: absolute;
     width: 100%;
     z-index: 0;
@@ -44,7 +42,7 @@
     position: absolute;
     width: 100%;
     z-index: 10;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 .vector1, .vector2, .vector3, .vector4 {
@@ -53,8 +51,56 @@
     margin-right: 15px;
 }
 
+.vector1:hover,.vector2:hover,.vector3:hover,.vector4:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
 .vector_container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.Personal_Text_Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container span {
+    font-weight: 500;
+}
+
+.btn_takequiz {
+    width: 12%;
+    height: 140%;
+    border-radius: 20px;
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    -ms-border-radius: 20;
+    -o-border-radius: 20;
+    border: none;
+    color: white;
+    background-color: #88619a;
+}
+
+.btn_takequiz:hover {
+    cursor: pointer;
+    background-color: #6e4b7f;
+    scale: 1.1;
+}
+
+.Personal_Text_Container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 52.3px;
+    color: #203440;
 }
