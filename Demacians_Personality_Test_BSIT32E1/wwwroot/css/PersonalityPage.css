@@ -5,8 +5,9 @@
 
 
 .PersonalityPage_Body {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bgfinal.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    
 }
