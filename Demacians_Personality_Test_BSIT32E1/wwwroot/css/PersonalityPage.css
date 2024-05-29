@@ -9,5 +9,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    
 }
+
+.Analysts-Text-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Analysts-Text-Container img {
+    width: 90%;
+    margin-top: 5%;
+}
+
+.Personality_Page {
+    display: flex;
+    height: 90vh;
+}
+
