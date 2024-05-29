@@ -3,3 +3,10 @@
     padding: 0;
 }
 
+
+.PersonalityPage_Body {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
