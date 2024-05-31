@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,28 +9,32 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/PersonalityPage.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Demacians_Personality_Test_BSIT32E1.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
-            <div class="container-fluid mx-auto">
-                <a href="">
+            <div class="container-fluid mx-auto" style="max-width: 80%;">
+                <a class="navbar-brand d-flex align-items-center" style="gap: 3rem;" href="#Home">
                     <img src="~/images/Logo.png" alt="">
                     <h3>Personality</h3>
                 </a>
 
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Personality Type</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Personality Test</a></li>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" style="font-family: 'Poppins', sans-serif;">
+                    <ul class="navbar-nav ml-auto" style="font-size: 18.2px; font-weight: 500; gap: 3rem;">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#About">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#PersonalityType">Personality Type</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#PersonalityTest">Personality Test</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,13 +47,15 @@
     </div>
 
     @* <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Demacians_Personality_Test_BSIT32E1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <div class="container">
+    &copy; 2024 - Demacians_Personality_Test_BSIT32E1 - <a asp-area="" asp-controller="Home"
+    asp-action="Privacy">Privacy</a>
+    </div>
     </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
