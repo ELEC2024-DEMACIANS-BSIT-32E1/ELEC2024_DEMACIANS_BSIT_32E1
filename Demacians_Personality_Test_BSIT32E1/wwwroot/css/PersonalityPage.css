@@ -42,13 +42,12 @@
     position: absolute;
     width: 100%;
     z-index: 10;
-    margin-top: 25%;
+    margin-top: 24%;
+    margin-left: 2.5%;
 }
 
 .vector1, .vector2, .vector3, .vector4 {
-    width: 30%;
-    margin-left: 22px;
-    margin-right: 15px;
+    width: 120%;
 }
 
 .vector1:hover,.vector2:hover,.vector3:hover,.vector4:hover {
@@ -60,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 }
 
 .Personal_Text_Container {
@@ -130,4 +130,42 @@
 }
 .nav-link:hover::after {
     width: 100%;
+}
+
+.Personality-Title-Container {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 44%;
+}
+
+.title-text {
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.types {
+    font-size: 28.8px;
+    color: #88619a;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 18.3px;
+}
+
+.vector_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vector-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title2 {
+    margin-left: 5%;
 }
