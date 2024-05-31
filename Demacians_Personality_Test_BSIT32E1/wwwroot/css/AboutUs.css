@@ -174,3 +174,27 @@
         border-radius: 80px;
     }
 
+
+/* FOURTH SECTION */
+
+.AboutUs_FourthSection {
+    background-image: url('/Images/Reference_Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.AboutUs_Text_Container4 {
+    color: #333;
+    max-width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .AboutUs_Text_Container4 h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
