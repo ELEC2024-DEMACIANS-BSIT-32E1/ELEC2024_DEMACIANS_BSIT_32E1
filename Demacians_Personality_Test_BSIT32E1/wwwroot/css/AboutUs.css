@@ -60,4 +60,54 @@
         background: #ff1493;
     }
 
+/* SECOND SECTION */
+
+.AboutUs_SecondSection {
+    padding: 50px;
+    text-align: center;
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.AboutUs_Text_Container2 {
+    color: #333;
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
+    .AboutUs_Text_Container2 h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+.AboutUs_Developer_Images {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.developer_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .developer_card img {
+        width: 150px;
+        height: 150px;
+        border-radius: 40px;
+        background-color: #d3d3d3;
+    }
+
+    .developer_card p {
+        margin-top: 10px;
+    }
+
