@@ -104,3 +104,30 @@
     font-size: 52.3px;
     color: #203440;
 }
+
+
+.navbar-nav {
+    display: flex;
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    font-size: 18.2px;
+    color: #000000;
+    font-weight: 500;
+    padding: 10px 27px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0097b2;
+    bottom: 10px;
+    left: 0;
+    transition: ease .40s;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
