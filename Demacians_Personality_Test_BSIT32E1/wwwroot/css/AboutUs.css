@@ -4,8 +4,14 @@
 }
 
 .AboutUs_Body {
-  
+    
 }
+     /* ADDED THIS PART TO REMOVE THE PADDING CAUSED BY THE BOOSTRAP */
+    .AboutUs_Body .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
 
 /* FIRST SECTION */
 
