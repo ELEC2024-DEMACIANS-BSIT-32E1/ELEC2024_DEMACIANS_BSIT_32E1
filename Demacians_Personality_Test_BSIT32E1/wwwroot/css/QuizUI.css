@@ -120,15 +120,19 @@
 
 .coloredplanetbg_container {
     padding-top: 40px;
-    position: relative;
+    /*position: relative;
     bottom: 10px;
     left: 10px;
-    width: 100px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;*/ /* Adjust width as needed */
+    /*height: auto;*/ /* Maintain aspect ratio */
+    display: flex;
+    justify-content: space-between; /* To push items to the left and right edges */
+    align-items: center; /* To vertically center items */
 }
-.nextbtn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.nextbtnimage, .coloredplanetbgimage {
+    max-width: 50%;
 }
 
+.nextbtnimage{
+    padding-top: 20em;
+}
