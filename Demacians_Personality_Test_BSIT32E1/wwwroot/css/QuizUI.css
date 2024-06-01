@@ -30,6 +30,7 @@
 .questiontitle{
     justify-content:center;
     text-align:center;
+    margin-bottom: 40px;
 }
 .planetbg_container {
     position: relative;
@@ -42,12 +43,92 @@
     z-index: -1;
 }
 
-    .planetbg_container img {
+.planetbg_container img {
         position: absolute;
-        top: 0px;
-        right: 0px;
         top: 10px;
         right: 10px;
         width: 500px; /* Adjust width as needed */
         height: auto; /* Maintain aspect ratio */
-    }
+}
+
+.Questionaires{
+    text-align:center;
+    border-bottom: 5px solid black;
+    width: 100;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.scale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.scale-button {
+    width: 40px; /*defaultvalue*/
+    height: 40px; 
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#yellow1{
+    width:100px;
+    height: 100px;
+}
+#yellow2 {
+    width: 80px;
+    height: 80px;
+}
+#yellow3 {
+    width: 60px;
+    height: 60px;
+}
+#white {
+    width: 40px;
+    height: 40px;
+}
+#red1 {
+    width: 60px;
+    height: 60px;
+}
+#red2 {
+    width: 80px;
+    height: 80px;
+}
+#red3 {
+    width: 100px;
+    height: 100px;
+}
+.scale-button.yellow {
+    border-color: yellow;
+}
+
+.scale-button.red {
+    border-color: red;
+}
+.scale-button.white {
+    border-color: white;
+}
+
+.scale-button.selected {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.coloredplanetbg_container {
+    padding-top: 40px;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.nextbtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
