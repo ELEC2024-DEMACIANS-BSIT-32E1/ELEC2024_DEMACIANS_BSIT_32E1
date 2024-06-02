@@ -16,8 +16,9 @@
     /* align-items: center; */
     /* justify-content: center; */
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
+    margin-top: 5%;
 }
 
 .Analysts-Text-Container {
@@ -169,3 +170,9 @@
 .title2 {
     margin-left: 5%;
 }
+
+.main-container-personalit_page {
+    display: flex;
+    margin-top: 5%;
+}
+
