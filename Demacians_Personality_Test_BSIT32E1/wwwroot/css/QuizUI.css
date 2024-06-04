@@ -120,19 +120,49 @@
 
 .coloredplanetbg_container {
     padding-top: 40px;
-    /*position: relative;
-    bottom: 10px;
-    left: 10px;
-    width: 100px;*/ /* Adjust width as needed */
-    /*height: auto;*/ /* Maintain aspect ratio */
     display: flex;
-    justify-content: space-between; /* To push items to the left and right edges */
-    align-items: center; /* To vertically center items */
+    justify-content: space-between; 
+    align-items: center;
 }
-.nextbtnimage, .coloredplanetbgimage {
+.nextbtn, .coloredplanetbgimage {
     max-width: 50%;
 }
 
-.nextbtnimage{
-    padding-top: 20em;
+.nextbtn {
+    margin-top: 10em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px 10px 30px; /*up right down left*/
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px #111111;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.nextbtn:hover {
+    background-color: #333333;
+    box-shadow: 10px 10px 15px #000000;
+}
+
+ .circle {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.innercircle {
+    width: 56px;
+    height: 56px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 0px;
 }
