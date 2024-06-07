@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.PersonalityPage_Body {
+    background-image: url("../images/bgggg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.Personality_Page {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    margin-top: 5%;
+}
+
+.Analysts-Text-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.Analysts-Text-Container img {
+    width: 90%;
+}
+
+.Personality_Type_Image_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin-top: 24%;
+    margin-left: 2.5%;
+}
+
+.vector1, .vector2, .vector3, .vector4 {
+    width: 120%;
+}
+
+.vector1:hover,.vector2:hover,.vector3:hover,.vector4:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.vector_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.Personal_Text_Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container span {
+    font-weight: 500;
+}
+
+.btn_takequiz {
+    width: 12%;
+    height: 140%;
+    border-radius: 20px;
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    -ms-border-radius: 20;
+    -o-border-radius: 20;
+    border: none;
+    color: white;
+    background-color: #88619a;
+}
+
+.btn_takequiz:hover {
+    cursor: pointer;
+    background-color: #6e4b7f;
+    scale: 1.1;
+}
+
+.Personal_Text_Container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 52.3px;
+    color: #203440;
+}
+
+
+.navbar-nav {
+    display: flex;
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    font-size: 18.2px;
+    color: #000000;
+    font-weight: 500;
+    padding: 10px 27px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0097b2;
+    bottom: 10px;
+    left: 0;
+    transition: ease .40s;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.Personality-Title-Container {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 44%;
+}
+
+.title-text {
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.types {
+    font-size: 28.8px;
+    color: #88619a;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 18.3px;
+}
+
+.vector_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vector-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title2 {
+    margin-left: 5%;
+}
+
+.main-container-personalit_page {
+    display: flex;
+    margin-top: 5%;
+}
+

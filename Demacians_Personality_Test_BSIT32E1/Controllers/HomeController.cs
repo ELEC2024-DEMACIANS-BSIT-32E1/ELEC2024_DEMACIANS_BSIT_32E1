@@ -13,6 +13,11 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             _logger = logger;
         }
 
+        public IActionResult PersonalityPage()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
