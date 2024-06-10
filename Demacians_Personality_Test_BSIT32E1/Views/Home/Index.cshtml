@@ -2,7 +2,223 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<style>
+    body {
+        background-image: linear-gradient(to bottom, #24134f 0%, #875efe 100%);
+    }
+
+    .home-container {
+        width: auto;
+        display: flex;
+        min-height: 100vh;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration-color: var(--dl-color-theme-secondary1);
+    }
+
+    .home-text {
+        top: 378px;
+        color: rgb(255, 255, 255);
+        right: 95px;
+        position: absolute;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .home-text01 {
+        font-size: 30px;
+    }
+
+    .home-text02 {
+        font-size: 50px;
+    }
+
+    .home-text03 {
+        font-size: 30px;
+    }
+
+    .home-text04 {
+        font-size: 30px;
+    }
+
+    .home-text05 {
+        font-size: 30px;
+    }
+
+    .home-text06 {
+        font-size: 30px;
+    }
+
+    .home-image {
+        top: 266px;
+        left: 58px;
+        width: 601px;
+        height: 493px;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .home-button {
+        top: 566px;
+        left: 1038px;
+        color: rgb(255, 255, 255);
+        width: 219px;
+        height: 99px;
+        position: absolute;
+        transition: 0.3s;
+        border-color: #ea1cdd;
+        border-width: 3px;
+        border-radius: 10px;
+        background-color: var(--dl-color-theme-primary1);
+    }
+
+        .home-button:hover {
+            animation-name: pulse;
+            animation-delay: 0s;
+            background-color: #a43671;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+
+    .home-text08 {
+        font-size: 24px;
+    }
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Acceptable Beneficial Pelican</title>
+    <meta property="og:title" content="Acceptable Beneficial Pelican" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+        html {
+            line-height: 1.15;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+        }
+
+        p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: transparent;
+        }
+
+        button, input, optgroup, select, textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button, [type="button"], [type="reset"], [type="submit"] {
+            -webkit-appearance: button;
+        }
+
+            button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
+
+            button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
+                outline: 1px dotted ButtonText;
+            }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        input {
+            padding: 2px 4px;
+        }
+
+        img {
+            display: block;
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+    </style>
+    <style data-tag="default-style-sheet">
+        html {
+            font-family: Inter;
+            font-size: 16px;
+        }
+
+        body {
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: normal;
+            line-height: 1.15;
+            color: var(--dl-color-theme-neutral-dark);
+            background-color: var(--dl-color-theme-neutral-light);
+            fill: var(--dl-color-theme-neutral-dark);
+        }
+    </style>
+    <link rel="stylesheet"
+          href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&amp;display=swap"
+          data-tag="font" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+          data-tag="font" />
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+        <link href="./index.css" rel="stylesheet" />
+
+        <div class="home-container">
+            <span class="home-text">
+                <span class="home-text01">"</span>
+                <span class="home-text02">Awareness of one's personality</span>
+                <br class="home-text03" />
+                <span class="home-text04">
+                    is the foundation of all personal growth.
+                </span>
+                <br class="home-text05" />
+                <span class="home-text06">
+                    Take the first step today with a personality Test"
+                </span>
+                <br />
+            </span>
+            <img alt="image"
+                 src="https://play.teleporthq.io/static/svg/default-img.svg"
+                 class="home-image" />
+            <button type="button" class="home-button button">
+                <span class="home-text08">
+                    <span>Take A Quiz</span>
+                    <br />
+                </span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
