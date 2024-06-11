@@ -10,7 +10,7 @@
     height: 100vh;
 } */
 
-.Personality_Page,.Diplomat_page {
+.Personality_Page {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -21,7 +21,14 @@
     margin-top: 5%;
 }
 
-.Analysts-Text-Container {
+.Diplomat_Page {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.Analysts-Text-Container, .Diplomat-Text-Container {
     display: flex;
     justify-content: center;
     align-items: center;
