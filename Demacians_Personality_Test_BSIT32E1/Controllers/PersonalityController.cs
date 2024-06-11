@@ -18,6 +18,11 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+         public IActionResult Virtuoso()
+        {
+            return View();
+        }
+
 
 
 
