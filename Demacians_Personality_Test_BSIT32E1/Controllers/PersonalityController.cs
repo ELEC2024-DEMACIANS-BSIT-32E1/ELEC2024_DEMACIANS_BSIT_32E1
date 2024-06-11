@@ -29,7 +29,18 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+
         public IActionResult Protagonist()
+        {
+            return View();
+        }
+
+        public IActionResult Mediator()
+        {
+            return View();
+        }
+
+        public IActionResult Campaigner()
         {
             return View();
         }
@@ -39,6 +50,10 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+        public IActionResult Commander()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

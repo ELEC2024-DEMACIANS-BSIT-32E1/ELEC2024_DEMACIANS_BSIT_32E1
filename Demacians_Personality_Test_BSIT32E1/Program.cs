@@ -22,7 +22,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+  
+    pattern: "{controller=Personality}/{action=Mediator}/{id?}");
 
     pattern: "{controller=Personality}/{action=Protagonist}/{id?}");
+
 
 app.Run();
