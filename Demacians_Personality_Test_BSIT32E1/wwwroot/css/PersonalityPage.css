@@ -28,11 +28,21 @@
     position: relative;
 }
 
-.Analysts-Text-Container, .Diplomat-Text-Container {
+.Analysts-Text-Container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 17%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.Diplomat-Text-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
     position: absolute;
     width: 100%;
     z-index: 0;
@@ -51,6 +61,18 @@
     width: 100%;
     z-index: 10;
     margin-top: 24%;
+    margin-left: 2.5%;
+}
+
+.Diplomat_Type_Image_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin-top: 16%;
     margin-left: 2.5%;
 }
 
