@@ -1,5 +1,60 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Advocate Page";
 }
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .LogicianBanner {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+
+        .LogicianBanner img {
+            padding-top: 60px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+    .Logician_Page h2 {
+        color: #343C4B;
+    }
+
+    .quote-container {
+        display: flex;
+        flex-direction: column;
+        border-left: 3px solid #6A1B9A;
+        padding-left: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        color: #212529;
+        margin: 20px 0;
+    }
+
+    .quote-text {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .quote-author {
+        font-weight: normal;
+        color: #555;
+    }
+
+</style>
+
+<body class="LogicianPage_Body">
+    <section class="LogicianBanner" id="LogicianBanner">
+        <img src="/images/Diplomats/Advocate.png" alt="Advocate Banner">
+    </section>
+</body>
