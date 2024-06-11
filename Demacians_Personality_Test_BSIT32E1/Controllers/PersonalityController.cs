@@ -18,13 +18,37 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
-         public IActionResult Virtuoso()
+
+
+        public IActionResult Protagonist()
         {
             return View();
         }
 
+        public IActionResult Mediator()
+        {
+            return View();
+        }
 
+        public IActionResult Campaigner()
+        {
+            return View();
+        }
 
+        public IActionResult Architect()
+        {
+            return View();
+        }
+
+        public IActionResult Commander()
+        {
+            return View();
+        }
+
+        public IActionResult Debater()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
