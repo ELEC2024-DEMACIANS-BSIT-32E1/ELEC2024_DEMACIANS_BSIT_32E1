@@ -29,6 +29,16 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+        public IActionResult Mediator()
+        {
+            return View();
+        }
+
+        public IActionResult Campaigner()
+        {
+            return View();
+        }
+
 
         public IActionResult Architect()
         {
