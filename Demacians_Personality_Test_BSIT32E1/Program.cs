@@ -22,7 +22,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-
+  
     pattern: "{controller=Personality}/{action=Mediator}/{id?}");
 
 app.Run();
