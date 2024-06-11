@@ -23,6 +23,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
 
+
     pattern: "{controller=Personality}/{action=Campaigner}/{id?}");
 
 app.Run();
