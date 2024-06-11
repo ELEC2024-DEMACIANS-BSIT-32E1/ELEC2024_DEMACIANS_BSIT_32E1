@@ -25,4 +25,7 @@ app.MapControllerRoute(
   
     pattern: "{controller=Personality}/{action=Mediator}/{id?}");
 
+
+    pattern: "{controller=Personality}/{action=Campaigner}/{id?}");
+
 app.Run();
