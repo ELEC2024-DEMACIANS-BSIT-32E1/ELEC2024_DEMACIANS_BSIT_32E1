@@ -3,13 +3,14 @@
 }
 
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
     .AboutUs_Body {
-        margin-top: 5%;
+        margin-top: 6%;
     }
 
     .AboutUs_FirstSection,
@@ -28,14 +29,22 @@
         background-image: url("../images/AboutUs-Images/AboutUs_1.png");
     }
 
-        .AboutUs_FirstSection h1 {
+    .FirstSection_Heading {
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+        .FirstSection_Heading h1 {
             color: #88619A;
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
             margin: 0;
         }
+    
+    /* SECOND SECTION */
+    
 
     .AboutUs_SecondSection {
         background-image: url("../images/AboutUs-Images/AboutUs_2.png");
@@ -44,12 +53,13 @@
     .AboutUs_ThirdSection {
         background-image: url("../images/AboutUs-Images/AboutUs_3.png");
     }
-
 </style>
 
 <body class="AboutUs_Body">
     <section class="AboutUs_FirstSection" id="AboutUs_FirstSection">
-        <h1>MEET OUR TEAM</h1>
+        <div class="FirstSection_Heading">
+            <h1>MEET OUR TEAM</h1>
+        </div>
 
     </section>
 
@@ -61,4 +71,3 @@
         <!-- Additional content can go here if needed -->
     </section>
 </body>
-
