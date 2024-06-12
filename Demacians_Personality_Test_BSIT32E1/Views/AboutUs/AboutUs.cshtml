@@ -137,7 +137,7 @@
 
         .text_container_Third p {
             font-size: 20px;
-        color: rgb(66,152,180);
+            color: rgb(66,152,180);
             line-height: 38px;
             letter-spacing: -0.02em;
             text-transform: none;
@@ -152,6 +152,7 @@
         font-weight: bold;
     }
 
+    /* SECOND SECTION STYLING */
     .AboutUs_SecondSection {
         background-image: url("../images/AboutUs-Images/AboutUs_2.png");
     }
@@ -159,8 +160,81 @@
     .Front-End_Code_heading{
         font-size: 40px;
         color: rgb(66,152,180);
+        padding-top: 50px;
         text-align: center;
         font-weight: bold;
+    }
+
+    .developer_second_section_row{
+         display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .developer_Fourth_row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .Back-End_Code_heading {
+        font-size: 40px;
+        color: rgb(228,174,58);
+        padding-top: 100px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .developer_card_Thirds {
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .developer_card_Thirds img {
+            width: 256px;
+            height: 256px;
+            border-radius: 50%;
+            border: 2px solid rgb(66,152,180);
+            margin-top: 30px;
+        }
+
+        .text_container_Thirds{
+        font-size: 20px;
+        color: rgb(66,152,180);
+        line-height: 38px;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        list-style-type: none;
+        }
+
+    .developer_card_Fourth {
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .developer_card_Fourth img {
+            width: 256px;
+            height: 256px;
+            border-radius: 50%;
+            border: 2px solid rgb(228,174,58);
+            margin-top: 30px;
+        }
+
+    .text_container_Fourth p {
+        font-size: 20px;
+        color: rgb(228,174,58);
+        line-height: 38px;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        list-style-type: none;
     }
 
     .AboutUs_ThirdSection {
@@ -247,7 +321,7 @@
             </div>
 
             @* THIRD ROW FOR FIRST SECTION *@
-            <div class="developer_second_row">
+            <div class="developer_Fourth_row">
                 <div class="developer_card_Third">
                     <img src="/images/AboutUs-Images/Groupmates-Images/Belza.jpg" alt="Developer">
                     <div class="text_container_Third">
@@ -277,11 +351,12 @@
                 </div>
 
                 <div class="developer_card_Third">
-                    <img src="/images/AboutUs-Images/Groupmates-Images/" alt="Front-end | Resources and UX |">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/" alt="Developer">
                     <div class="text_container_Third">
                         <p>Mamay Joice Ann</p>
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -297,37 +372,63 @@
         </div>
 
         @* FIRST ROW FOR SECOND SECTION *@
-        <div class="developer_second_row">
-            <div class="developer_card_Third">
+        <div class="developer_second_section_row">
+            <div class="developer_card_Thirds">
                 <img src="/images/AboutUs-Images/Groupmates-Images/Tabin.jpg" alt="Developer">
-                <div class="text_container_Third">
+                <div class="text_container_Thirds">
                     <p>Jasper Tabin</p>
                 </div>
             </div>
 
-            <div class="developer_card_Third">
+            <div class="developer_card_Thirds">
                 <img src="/images/AboutUs-Images/Groupmates-Images/Gerolia.jpg" alt="Developer">
-                <div class="text_container_Third">
+                <div class="text_container_Thirds">
                     <p>John Gabriel Gerolia</p>
                 </div>
             </div>
 
-            <div class="developer_card_Third">
+            <div class="developer_card_Thirds">
                 <img src="/images/AboutUs-Images/Groupmates-Images/Gerodiaz.jpg" alt="Developer">
-                <div class="text_container_Third">
+                <div class="text_container_Thirds">
                     <p>Rogel Gerodiaz</p>
                 </div>
             </div>
 
-            <div class="developer_card_Third">
+            <div class="developer_card_Thirds">
                 <img src="/images/AboutUs-Images/Groupmates-Images/Ragiles.jpg" alt="Developer">
-                <div class="text_container_Third">
+                <div class="text_container_Thirds">
                     <p>Tristan Bren V. Ragiles</p>
                 </div>
             </div>
         </div>
 
-       
+        <div class="Back-End_Code_heading">
+            <p>BACK-END/CODE</p>
+        </div>
+
+        @* SECOND ROW FOR SECOND SECTION *@
+        <div class="developer_second_section_row">
+            <div class="developer_card_Fourth">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Reyes.jpg" alt="Developer">
+                <div class="text_container_Fourth">
+                    <p>Martin Tristan Reyes</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Fourth">
+                <img src="/images/AboutUs-Images/Groupmates-Images/DeLuna.jpg" alt="Developer">
+                <div class="text_container_Fourth">
+                    <p>Dexter De-Luna</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Fourth">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Rodejo.jpg" alt="Developer">
+                <div class="text_container_Fourth">
+                    <p>Rodejo Varon Ian</p>
+                </div>
+            </div>
+        </div>
 
     </section>
 
