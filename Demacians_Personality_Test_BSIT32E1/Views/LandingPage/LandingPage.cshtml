@@ -31,7 +31,7 @@
         justify-content: center;
     }
     .description-text{
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 20px;
     }
 
@@ -53,13 +53,26 @@
         cursor: pointer;
         transition: background-color 0.3s, box-shadow 0.3s;
         margin-top: 20px;
-        padding: 5px 35px 5px 35px; /*up right down left*/
+        padding: 8px 35px 8px 35px; /*up right down left*/
         font-weight: bold;
-        font-size:20px;
+        font-size:25px;
         color:white;
     }
 
-    
+    .downloadbtn:hover {
+        background-color: #054548
+        /* box-shadow: 10px 10px 15px #000000; */
+    }
+    .socialmedia-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .socialmedia-logo:img{
+        width:80%;
+    }
 </style>
 
 <body class="landingpagebody">
@@ -71,10 +84,10 @@
     </div>
     <div class="download-container">
         <button class="downloadbtn">Download</button>
-        <div class="socialmedia-logo">
-            <img src="/images/Facebook.png">
-            <img src="/images/Twitter.png">
-            <img src="/images/Instagram.png">
-        </div>
-    <div/>
+    </div>
+    <div class="socialmedia-logo">
+        <img src="/images/Facebook.png">
+        <img src="/images/Twitter.png">
+        <img src="/images/Instagram.png">
+    </div>
 </body>
