@@ -3,6 +3,10 @@
 }
 
 <style>
+    .landingpagebody{
+        align-content: center;
+    }
+
     .landingpage {
         width: 100%;
         height: auto;
@@ -10,18 +14,51 @@
         padding: 0;
         position: relative;
         text-align: center;
+        justify-content: center;
+        display: flex;
+        align-content: center;
     }
 
-        .landingpage img {
-            padding-top: 60px;
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+    .landingpage img {
+        padding-top: 60px;
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+
+    .description-container{
+        text-align:center;
+        justify-content: center;
+    }
+    .description-text{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .download-container{
+        border-top: 2px solid rgb(219, 219, 219);
+        /* width: 80%; */
+        justify-content: center;
+        display: flex;
+        align-content: center;
+    }
+
+    .downloadbtn{
+    }
+
 </style>
 
-<body>
+<body class="landingpagebody">
     <section class="landingpage">
         <img src="/images/landingpage.png">
     </section>
+    <div class="description-container">
+        <p class="description-text">Enthusiastic, creative and sociable free spirits, who can always <br> find a reason to smile.</br>
+    </div>
+    <div class="download-container">
+        <button class="downloadbtn">Download</button>
+        <div class="socialmedia-logo">
+
+        </div>
+    <div/>
 </body>
