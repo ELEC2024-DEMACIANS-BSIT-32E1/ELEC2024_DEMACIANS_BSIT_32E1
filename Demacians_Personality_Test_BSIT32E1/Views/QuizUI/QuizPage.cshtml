@@ -98,21 +98,6 @@
         border-color: gray;
     }
 
-    .scale-button.selected {
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    .coloredplanetbg_container {
-        padding-top: 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nextbtn, .coloredplanetbgimage {
-        max-width: 50%;
-    }
-
     .nextbtn {
         margin-top: 10em;
         display: inline-flex;
@@ -130,10 +115,10 @@
         transition: background-color 0.3s, box-shadow 0.3s;
     }
 
-        .nextbtn:hover {
-            background-color: #333333;
-            box-shadow: 10px 10px 15px #000000;
-        }
+     .nextbtn:hover {
+        background-color: #333333;
+        box-shadow: 10px 10px 15px #000000;
+     }
 </style>
 
 <body>
@@ -144,6 +129,7 @@
         <div class="Questionaires">
             <h2 class="questiontitle">Question #1</h2>
             <div class="scale">
+                <p class="Agreetext">Agree</p>
                 <button class="scale-button green" id="green1" data-value="1"></button>
                 <button class="scale-button green" id="green2" data-value="2"></button>
                 <button class="scale-button green" id="green3" data-value="3"></button>
@@ -151,6 +137,8 @@
                 <button class="scale-button red" id="red1" data-value="5"></button>
                 <button class="scale-button red" id="red2" data-value="6"></button>
                 <button class="scale-button red" id="red3" data-value="7"></button>
+                <p class="Disagreetext">Disagree</p>
+
             </div>
         </div>
         <div class="Questionaires">
@@ -204,7 +192,5 @@
             <button class="nextbtn">
                 NEXT
             </button>
-            
-        </div>
     </section>
 </body>
