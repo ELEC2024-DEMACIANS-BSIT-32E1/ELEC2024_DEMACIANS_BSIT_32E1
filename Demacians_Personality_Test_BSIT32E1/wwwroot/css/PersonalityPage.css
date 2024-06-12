@@ -294,3 +294,8 @@ footer {
 .footer_image_socials_container .one {
     width: 75px;
 }
+
+.footer_image_socials_container img:hover {
+    cursor: pointer;
+    scale: 1.5;
+}
