@@ -220,3 +220,14 @@
 .upper_bg {
     background-image: url("../images/upper_bg.png");
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 0.5px solid #beb9b9;
+    width: 100vw;
+    margin-left: -25%;
+    margin-top: 10%;
+}
