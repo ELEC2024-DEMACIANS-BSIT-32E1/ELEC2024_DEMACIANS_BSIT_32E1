@@ -111,18 +111,16 @@
     }
 
     .nextbtn {
-        margin-top: 10em;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 50px 10px 30px; /*up right down left*/
-        background-color: #1e1e1e;
-        color: white;
+        padding: 5px 20px 5px 60px; /*up right down left*/
+        background-color: #88619a;
+        color: black;
         font-size: 25px;
         font-weight: normal;
         border: none;
         border-radius: 50px;
-        box-shadow: 5px 5px 15px #111111;
         cursor: pointer;
         transition: background-color 0.3s, box-shadow 0.3s;
     }
@@ -131,6 +129,15 @@
         background-color: #333333;
         box-shadow: 10px 10px 15px #000000;
      }
+
+    .nexttext {
+        font-size: 30px;
+        margin-right:5px;
+    }
+
+    .rightarrow {
+        font-size: 40px;
+    }
 </style>
 
 <body>
@@ -223,7 +230,8 @@
             </div>
         </div>
             <button class="nextbtn">
-                NEXT
-            </button>
+            <span class="nexttext">Next</span>
+            <span class="rightarrow">→</span>
+        </button>
     </section>
 </body>
