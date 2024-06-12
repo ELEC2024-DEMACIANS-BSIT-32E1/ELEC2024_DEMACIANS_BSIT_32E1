@@ -1,156 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Virtuoso Page";
+    ViewData["Title"] = "Quiz Page";
 }
 
-<style>
-
-    .QuizUI_Page {
-        display: flex;
-        justify-content: center;
-        margin-top: 8%; 
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .maintitle {
-        font-size: 60px;
-        margin-bottom: 20px;
-    }
-
-    .questiontitle {
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .Questionaires {
-        text-align: center;
-        border-bottom: 2px solid black;
-        width: 100;
-        padding-top: 10px;
-        padding-bottom: 25px;
-    }
-
-    .scale {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .scale-button {
-        width: 40px; /*defaultvalue*/
-        height: 40px;
-        border: 2px solid;
-        border-radius: 50%;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    #green1 {
-        width: 100px;
-        height: 100px;
-    }
-
-    #green2 {
-        width: 80px;
-        height: 80px;
-    }
-
-    #green3 {
-        width: 60px;
-        height: 60px;
-    }
-
-    #white {
-        width: 40px;
-        height: 40px;
-    }
-
-    #red1 {
-        width: 60px;
-        height: 60px;
-    }
-
-    #red2 {
-        width: 80px;
-        height: 80px;
-    }
-
-    #red3 {
-        width: 100px;
-        height: 100px;
-    }
-
-    .scale-button.green {
-        border-color: green;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .scale-button.red {
-        border-color: red;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .scale-button.white {
-        border-color: gray;
-        margin-left: 10px;
-        margin-right: 10px
-    }
-
-    .Agreetext{
-        color: green;
-        margin-right: 15px;
-    }
-
-    .Disagreetext{
-        color: red;
-        margin-left: 15px;
-    }
-
-    .divbtn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nextbtn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        padding: 5px 30px 5px 70px; /*up right down left*/
-        background-color: #88619a;
-        color: black;
-        font-size: 25px;
-        font-weight: normal;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
-
-     .nextbtn:hover {
-        background-color:  #533b5e;
-        /* box-shadow: 10px 10px 15px #000000; */
-     }
-
-    .nexttext {
-        font-size: 30px;
-        margin-right:5px;
-    }
-
-    .rightarrow {
-        font-size: 40px;
-    }
-</style>
+<link rel="stylesheet" href="~/css/quizui.css" />
 
 <body>
     <section class="QuizUI_Page" id="QuizUI_Page">
         <div class="Questionaires">
-            <h3 class="questiontitle">You regularly make new friends.</h3>
+            <h3 class="questiontitle">You often feel overwhelmed.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
                 <button class="scale-button green" id="green1" data-value="1"></button>
@@ -164,7 +21,7 @@
             </div>
         </div>
         <div class="Questionaires">
-            <h3 class="questiontitle">Complex and novel ideas excite you more than simple and straightforward ones.</h3>
+            <h3 class="questiontitle">You complete things methodically without skipping over any steps.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
                 <button class="scale-button green" id="green1" data-value="1"></button>
@@ -178,7 +35,7 @@
             </div>
         </div>
         <div class="Questionaires">
-            <h3 class="questiontitle">You usually feel more persuaded by what resonates emotionally with you than by factual arguments.</h3>
+            <h3 class="questiontitle">You prefer tasks that require you to come up with <br>creative solutions rather than follow concrete steps.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
                 <button class="scale-button green" id="green1" data-value="1"></button>
@@ -192,7 +49,7 @@
             </div>
         </div>
         <div class="Questionaires">
-            <h3 class="questiontitle">Your living and working spaces are clean and organized.</h3>
+            <h3 class="questiontitle">You are more likely to rely on emotional intuition than logical reasoning when making a choice.</h3>
             <div class="scale">
                 <h2 class="Agreetext">Agree</h2>
                 <button class="scale-button green" id="green1" data-value="1"></button>
@@ -206,7 +63,7 @@
             </div>
         </div>
         <div class="Questionaires">
-            <h3 class="questiontitle">You usually stay calm, even under a lot of pressure.</h3>
+            <h3 class="questiontitle">You struggle with deadlines.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
                 <button class="scale-button green" id="green1" data-value="1"></button>
@@ -220,7 +77,7 @@
             </div>
          </div>
         <div class="Questionaires">
-            <h3 class="questiontitle">You find the idea of networking or promoting yourself to strangers very daunting.</h3>
+            <h3 class="questiontitle">You feel confident that things will work out for you.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
                 <button class="scale-button green" id="green1" data-value="1"></button>
@@ -235,7 +92,7 @@
         </div>
         <div class="divbtn">
             <button class="nextbtn">
-            <span class="nexttext">Next</span>
+            <span class="nexttext">See results</span>
             <span class="rightarrow">→</span>
         </div>
         </button>
