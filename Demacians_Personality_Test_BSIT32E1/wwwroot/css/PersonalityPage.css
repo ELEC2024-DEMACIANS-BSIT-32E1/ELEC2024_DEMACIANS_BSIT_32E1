@@ -3,12 +3,9 @@
     padding: 0;
 }
 
-/* .PersonalityPage_Body {
-    background-image: url("../images/bgggg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-} */
+.PersonalityPage_Body {
+
+}
 
 .Personality_Page {
     display: flex;
@@ -19,6 +16,17 @@
     height: 90vh;
     position: relative;
     margin-top: 5%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 146.9%;
+    height: 103%;
+    object-fit: cover;
+    z-index: -1;
+    margin-left: -23.5%;
 }
 
 .Diplomat_Page, .Sentinel_Page, .Explorer_Page {
