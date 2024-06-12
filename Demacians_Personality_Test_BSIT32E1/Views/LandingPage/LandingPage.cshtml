@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Landing Page";
+}
+
+<style>
+    .landingpagebody{
+        align-content: center;
+    }
+
+    .landingpage {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+    }
+
+    .landingpage img {
+        padding-top: 60px;
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+
+    .description-container{
+        text-align:center;
+        justify-content: center;
+    }
+    .description-text{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .download-container{
+        border-top: 2px solid rgb(219, 219, 219);
+        /* width: 80%; */
+        justify-content: center;
+        display: flex;
+        align-content: center;
+    }
+
+    .downloadbtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0Dc4cc;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        margin-top: 20px;
+        padding: 8px 35px 8px 35px; /*up right down left*/
+        font-weight: bold;
+        font-size:25px;
+        color:white;
+    }
+
+    .downloadbtn:hover {
+        background-color: #054548
+        /* box-shadow: 10px 10px 15px #000000; */
+    }
+    .socialmedia-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .socialmedia-logo:img{
+        width:80%;
+    }
+</style>
+
+<body class="landingpagebody">
+    <section class="landingpage">
+        <img src="/images/landingpage.png">
+    </section>
+    <div class="description-container">
+        <p class="description-text">Enthusiastic, creative and sociable free spirits, who can always <br> find a reason to smile.</br>
+    </div>
+    <div class="download-container">
+        <button class="downloadbtn">Download</button>
+    </div>
+    <div class="socialmedia-logo">
+        <img src="/images/Facebook.png">
+        <img src="/images/Twitter.png">
+        <img src="/images/Instagram.png">
+    </div>
+</body>
