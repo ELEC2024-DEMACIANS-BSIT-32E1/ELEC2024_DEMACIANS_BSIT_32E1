@@ -1,0 +1,210 @@
+﻿@{
+    ViewData["Title"] = "Virtuoso Page";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .Title_container {
+        display: flex;
+        justify-content: center;
+        margin-top: 8%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maintitle {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .questiontitle {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .Questionaires {
+        text-align: center;
+        border-bottom: 5px solid black;
+        width: 100;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    .scale {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .scale-button {
+        width: 40px; /*defaultvalue*/
+        height: 40px;
+        border: 2px solid;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #yellow1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #yellow2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    #yellow3 {
+        width: 60px;
+        height: 60px;
+    }
+
+    #white {
+        width: 40px;
+        height: 40px;
+    }
+
+    #red1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    #red2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    #red3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .scale-button.yellow {
+        border-color: yellow;
+    }
+
+    .scale-button.red {
+        border-color: red;
+    }
+
+    .scale-button.white {
+        border-color: white;
+    }
+
+    .scale-button.selected {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .coloredplanetbg_container {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nextbtn, .coloredplanetbgimage {
+        max-width: 50%;
+    }
+
+    .nextbtn {
+        margin-top: 10em;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 50px 10px 30px; /*up right down left*/
+        background-color: #1e1e1e;
+        color: white;
+        font-size: 25px;
+        font-weight: normal;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 5px 5px 15px #111111;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+        .nextbtn:hover {
+            background-color: #333333;
+            box-shadow: 10px 10px 15px #000000;
+        }
+</style>
+
+<body>
+    <section class="QuizUI_Page" id="QuizUI_Page">
+        <div class="Title_container">
+            <h1 class="maintitle">Question</h1>
+        </div>
+        <div class="Questionaires">
+            <h2 class="questiontitle">Question #1</h2>
+            <div class="scale">
+                <button class="scale-button yellow" id="yellow1" data-value="1"></button>
+                <button class="scale-button yellow" id="yellow2" data-value="2"></button>
+                <button class="scale-button yellow" id="yellow3" data-value="3"></button>
+                <button class="scale-button white" id="white" data-value="4"></button>
+                <button class="scale-button red" id="red1" data-value="5"></button>
+                <button class="scale-button red" id="red2" data-value="6"></button>
+                <button class="scale-button red" id="red3" data-value="7"></button>
+            </div>
+        </div>
+        <div class="Questionaires">
+            <h2 class="questiontitle">Question #2</h2>
+            <div class="scale">
+                <button class="scale-button yellow" id="yellow1" data-value="1"></button>
+                <button class="scale-button yellow" id="yellow2" data-value="2"></button>
+                <button class="scale-button yellow" id="yellow3" data-value="3"></button>
+                <button class="scale-button white" id="white" data-value="4"></button>
+                <button class="scale-button red" id="red1" data-value="5"></button>
+                <button class="scale-button red" id="red2" data-value="6"></button>
+                <button class="scale-button red" id="red3" data-value="7"></button>
+            </div>
+        </div>
+        <div class="Questionaires">
+            <h2 class="questiontitle">Question #3</h2>
+            <div class="scale">
+                <button class="scale-button yellow" id="yellow1" data-value="1"></button>
+                <button class="scale-button yellow" id="yellow2" data-value="2"></button>
+                <button class="scale-button yellow" id="yellow3" data-value="3"></button>
+                <button class="scale-button white" id="white" data-value="4"></button>
+                <button class="scale-button red" id="red1" data-value="5"></button>
+                <button class="scale-button red" id="red2" data-value="6"></button>
+                <button class="scale-button red" id="red3" data-value="7"></button>
+            </div>
+        </div>
+        <div class="Questionaires">
+            <h2 class="questiontitle">Question #4</h2>
+            <div class="scale">
+                <button class="scale-button yellow" id="yellow1" data-value="1"></button>
+                <button class="scale-button yellow" id="yellow2" data-value="2"></button>
+                <button class="scale-button yellow" id="yellow3" data-value="3"></button>
+                <button class="scale-button white" id="white" data-value="4"></button>
+                <button class="scale-button red" id="red1" data-value="5"></button>
+                <button class="scale-button red" id="red2" data-value="6"></button>
+                <button class="scale-button red" id="red3" data-value="7"></button>
+            </div>
+        </div>
+        <div class="Questionaires">
+            <h2 class="questiontitle">Question #5</h2>
+            <div class="scale">
+                <button class="scale-button yellow" id="yellow1" data-value="1"></button>
+                <button class="scale-button yellow" id="yellow2" data-value="2"></button>
+                <button class="scale-button yellow" id="yellow3" data-value="3"></button>
+                <button class="scale-button white" id="white" data-value="4"></button>
+                <button class="scale-button red" id="red1" data-value="5"></button>
+                <button class="scale-button red" id="red2" data-value="6"></button>
+                <button class="scale-button red" id="red3" data-value="7"></button>
+            </div>
+         </div>
+            <button class="nextbtn">
+                NEXT
+            </button>
+            
+        </div>
+    </section>
+</body>
