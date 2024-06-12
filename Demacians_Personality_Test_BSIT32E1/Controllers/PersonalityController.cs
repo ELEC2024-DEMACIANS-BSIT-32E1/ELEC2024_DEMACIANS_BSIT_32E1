@@ -18,7 +18,33 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+        public IActionResult Entrepreneur()
+        {
+            return View();
+        }
+        public IActionResult Entertainer()
+        {
+            return View();
+        }
+        public IActionResult Advocate()
+        {
+            return View();
+        }
 
+        public IActionResult Adventurer()
+        {
+            return View();
+        }
+
+        public IActionResult Logician()
+        {
+            return View();
+        }
+
+        public IActionResult Virtuoso()
+        {
+            return View();
+        }
 
         public IActionResult Protagonist()
         {
