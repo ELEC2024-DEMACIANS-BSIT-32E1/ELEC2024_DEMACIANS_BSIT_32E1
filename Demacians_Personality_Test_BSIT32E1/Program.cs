@@ -24,11 +24,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-<<<<<<< Updated upstream
-    pattern: "{controller=Personality}/{action=Executive}/{id?}");
 
-=======
     pattern: "{controller=Personality}/{action=PersonalityPage}/{id?}");
->>>>>>> Stashed changes
+
 
 app.Run();
