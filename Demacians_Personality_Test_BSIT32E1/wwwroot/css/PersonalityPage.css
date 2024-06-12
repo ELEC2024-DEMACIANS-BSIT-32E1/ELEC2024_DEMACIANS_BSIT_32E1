@@ -226,8 +226,19 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    border-top: 0.5px solid #beb9b9;
+    border-top: 0.5px solid #ede7e7;
     width: 100vw;
     margin-left: -25%;
     margin-top: 10%;
+}
+
+.text_footer_container {
+    margin-top: 3%;
+}
+
+.text_footer_container h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: #bfbbbb;
 }
