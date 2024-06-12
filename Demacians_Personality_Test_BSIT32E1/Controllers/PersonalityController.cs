@@ -28,6 +28,13 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+        public IActionResult Logician()
+        {
+            return View();
+        }
+
+
+
         public IActionResult Protagonist()
         {
             return View();
