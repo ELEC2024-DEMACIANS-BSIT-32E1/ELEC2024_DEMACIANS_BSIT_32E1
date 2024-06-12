@@ -39,6 +39,7 @@
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+    transition-duration: 0.4s;
 }
 
 #green1 {
@@ -82,16 +83,28 @@
     margin-right: 15px;
 }
 
+.scale-button.green:hover {
+    background-color: green;
+}
+
 .scale-button.red {
     border-color: red;
     margin-left: 15px;
     margin-right: 15px;
 }
 
+.scale-button.red:hover {
+    background-color: red;
+}
+
 .scale-button.white {
     border-color: gray;
     margin-left: 10px;
     margin-right: 10px
+}
+
+.scale-button.white:hover {
+    background-color: gray;
 }
 
 .Agreetext {
