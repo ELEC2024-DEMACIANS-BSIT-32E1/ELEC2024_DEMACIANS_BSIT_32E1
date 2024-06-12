@@ -79,12 +79,14 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
         {
             return View();
         }
-
         public IActionResult Logistician()
         {
             return View();
         }
-
+        public IActionResult Executive()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
