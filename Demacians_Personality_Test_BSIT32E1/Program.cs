@@ -25,6 +25,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
 
-    pattern: "{controller=QuizUI}/{action=QuizPage6}/{id?}");
+    pattern: "{controller=QuizUI}/{action=QuizPage7}/{id?}");
 
 app.Run();
