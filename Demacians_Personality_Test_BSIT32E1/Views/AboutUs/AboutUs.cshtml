@@ -1,0 +1,474 @@
+﻿@{
+    ViewData["Title"] = "AboutUs Page";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .AboutUs_Body {
+        margin-top: 2%;
+    }
+
+    .AboutUs_FirstSection,
+    .AboutUs_SecondSection,
+    .AboutUs_ThirdSection {
+        width: 100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../images/AboutUs-Images/AboutUs_1.png");
+    }
+
+
+    .FirstSection_Heading {
+        width: 100%;
+        text-align: center;
+        margin-top:35px;
+    }
+
+        .FirstSection_Heading h1 {
+            color: #88619A;
+            margin: 0;
+            font-weight: bold;
+        }
+    
+    /* SECOND SECTION */
+    .AboutUs_Developer_Sections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 80%;
+    }
+
+
+    .developer_row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    /* FIRST ROW */
+    .developer_first_row{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    /* SECOND ROW */
+    .developer_second_row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .developer_card {
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .developer_card img {
+            width: 186px;
+            height: 186px;
+            border-radius: 50%;
+            border: 2px solid rgb(55, 165, 128);
+        }
+
+    .developer_card_Third {
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .developer_card_Third img {
+            width: 186px;
+            height: 186px;
+            border-radius: 50%;
+            border: 2px solid rgb(66,152,180);
+            margin-top:30px;
+        }
+
+    .text_container {
+        width: 100%; 
+        height: 10%; 
+    }
+
+        .text_container h2 {
+            font-size: 27.4444px;
+            color: rgb(55, 165, 128);
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            text-transform: none;
+            list-style-type: none;
+            font-weight: bold;
+        }
+
+        .text_container p {
+            font-size: 20px;
+            color: rgb(55, 165, 128);
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            text-transform: none;
+            list-style-type: none;
+        }
+
+        .text_container_Third p {
+            font-size: 20px;
+            color: rgb(66,152,180);
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            text-transform: none;
+            list-style-type: none;
+        }
+
+    .ui_resources_heading {
+        font-size: 40px;
+        color: rgb(55, 165, 128);
+        
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* SECOND SECTION STYLING */
+    .AboutUs_SecondSection {
+        background-image: url("../images/AboutUs-Images/AboutUs_2.png");
+    }
+
+    .Front-End_Code_heading{
+        font-size: 40px;
+        color: rgb(66,152,180);
+        padding-top: 0px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .developer_second_section_row{
+         display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom:90px;
+    }
+
+    .developer_Fourth_row {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .Back-End_Code_heading {
+        font-size: 40px;
+        color: rgb(228,174,58);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .developer_card_Thirds {
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .developer_card_Thirds img {
+            width: 256px;
+            height: 256px;
+            border-radius: 50%;
+            border: 2px solid rgb(66,152,180);
+            margin-top: 30px;
+        }
+
+        .text_container_Thirds{
+        font-size: 20px;
+        color: rgb(66,152,180);
+        line-height: 38px;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        list-style-type: none;
+        }
+
+    .developer_card_Fourth {
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .developer_card_Fourth img {
+            width: 256px;
+            height: 256px;
+            border-radius: 50%;
+            border: 2px solid rgb(228,174,58);
+            margin-top: 30px;
+        }
+
+    .text_container_Fourth p {
+        font-size: 20px;
+        color: rgb(228,174,58);
+        line-height: 38px;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        list-style-type: none;
+    }
+
+    .AboutUs_ThirdSection {
+        background-image: url("../images/AboutUs-Images/AboutUs_3.png");
+    }
+
+    .AboutUs_ThirdSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .link_list {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+        .link_list li {
+            margin-bottom: 10px;
+        }
+
+            .link_list li a {
+                text-decoration: none;
+                color: #000; 
+            }
+
+                .link_list li a:hover {
+                    text-decoration: underline;
+                }
+</style>
+
+<body class="AboutUs_Body">
+    <section class="AboutUs_FirstSection" id="AboutUs_FirstSection">
+        <div class="FirstSection_Heading">
+            <h1>MEET OUR TEAM</h1>
+        </div>
+
+        <div class="AboutUs_Developer_Sections">
+            @* FIRST ROW FOR FIRST SECTION *@
+            <div class="developer_row">
+                <div class="developer_card">
+                    <div class="image_container">
+                        <div class="text_container">
+                            <h2>VICE LEADER</h2>
+                        </div>
+                        <img src="/images/AboutUs-Images/Groupmates-Images/Garcia.png" alt="Leader">
+                        <div class="text_container">
+                            <p>Garcia Mark Angelo</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="developer_card">
+                    <div class="image_container">
+                        <div class="text_container">
+                            <h2>LEADER</h2>
+                        </div>
+                        <img src="/images/AboutUs-Images/Groupmates-Images/Salazar.png" alt="Leader">
+                        <div class="text_container">
+                            <p>Gabriel Angelo Salazar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @* HEADING FOR UI/RESOURCE *@
+            <div class="ui_resources_heading">
+                <p>UI/RESOURCES</p>
+            </div>
+
+            @* SECOND ROW FOR FIRST SECTION *@
+            <div class="developer_first_row">
+                <div class="developer_card">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Sarmiento.jpg" alt="Developer">
+                    <div class="text_container">
+                        <p>Jerico Sarmiento</p>
+                    </div>
+                </div>
+
+                <div class="developer_card">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Montero.jpg" alt="Developer">
+                    <div class="text_container">
+                        <p>Charm Montero</p>
+                    </div>
+                </div>
+
+                <div class="developer_card">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Cantonjos.jpg" alt="Developer">
+                    <div class="text_container">
+                        <p>Arman Cantonjos</p>
+                    </div>
+                </div>
+
+                <div class="developer_card">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Cresencio.jpg" alt="Developer">
+                    <div class="text_container">
+                        <p>Miguel Crecencio</p>
+                    </div>
+                </div>
+
+                <div class="developer_card">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/" alt="Front-end | Resources and UX |">
+                    <div class="text_container">
+                        <p>Andrei Cruz</p>
+                    </div>
+                </div>
+            </div>
+
+            @* THIRD ROW FOR FIRST SECTION *@
+            <div class="developer_Fourth_row">
+                <div class="developer_card_Third">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Belza.jpg" alt="Developer">
+                    <div class="text_container_Third">
+                        <p>Jan Felicity Belza</p>
+                    </div>
+                </div>
+
+                <div class="developer_card_Third">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Rojas.jpg" alt="Developer">
+                    <div class="text_container_Third">
+                        <p>John Gabriel Rojas</p>
+                    </div>
+                </div>
+
+                <div class="developer_card_Third">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Pajarillo.jpg" alt="Developer">
+                    <div class="text_container_Third">
+                        <p>Terrence Pajarillo</p>
+                    </div>
+                </div>
+
+                <div class="developer_card_Third">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/Estrella.jpg" alt="Developer">
+                    <div class="text_container_Third">
+                        <p>Ginmer Estrella</p>
+                    </div>
+                </div>
+
+                <div class="developer_card_Third">
+                    <img src="/images/AboutUs-Images/Groupmates-Images/" alt="Developer">
+                    <div class="text_container_Third">
+                        <p>Mamay Joice Ann</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+       
+
+       
+    </section>
+
+    <section class="AboutUs_SecondSection" id="AboutUs_SecondSection">
+        <div class="Front-End_Code_heading">
+            <p>FRONT-END/CODE</p>
+        </div>
+
+        @* FIRST ROW FOR SECOND SECTION *@
+        <div class="developer_second_section_row">
+            <div class="developer_card_Thirds">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Tabin.jpg" alt="Developer">
+                <div class="text_container_Thirds">
+                    <p>Jasper Tabin</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Thirds">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Gerolia.jpg" alt="Developer">
+                <div class="text_container_Thirds">
+                    <p>John Gabriel Gerolia</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Thirds">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Gerodiaz.jpg" alt="Developer">
+                <div class="text_container_Thirds">
+                    <p>Rogel Gerodiaz</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Thirds">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Ragiles.jpg" alt="Developer">
+                <div class="text_container_Thirds">
+                    <p>Tristan Bren V. Ragiles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Back-End_Code_heading">
+            <p>BACK-END/CODE</p>
+        </div>
+
+        @* SECOND ROW FOR SECOND SECTION *@
+        <div class="developer_second_section_row">
+            <div class="developer_card_Fourth">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Reyes.jpg" alt="Developer">
+                <div class="text_container_Fourth">
+                    <p>Martin Tristan Reyes</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Fourth">
+                <img src="/images/AboutUs-Images/Groupmates-Images/DeLuna.jpg" alt="Developer">
+                <div class="text_container_Fourth">
+                    <p>Dexter De-Luna</p>
+                </div>
+            </div>
+
+            <div class="developer_card_Fourth">
+                <img src="/images/AboutUs-Images/Groupmates-Images/Rodejo.jpg" alt="Developer">
+                <div class="text_container_Fourth">
+                    <p>Rodejo Varon Ian</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="AboutUs_ThirdSection" id="AboutUs_ThirdSection">
+        <ul class="link_list">
+            <li><a href="https://www.16personalities.com/">16 Personalities</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/SARMIENTO-UI-MOCK-UP">SARMIENTO UI MOCK-UP</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/Montero,-Charm-Venice-C.">Montero, Charm Venice C.</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/Belza,-Jan-Felicity-P.">Belza, Jan Felicity P.</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/Cantonjos,-Arman-B.">Cantonjos, Arman B.</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/CRESENCIO-UI">Cresencio UI</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/ESTRELLA,-GINMER,-PIDLAOAN">Estrella, Ginmer, Pidlaoan</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/MAMAY,-JOICE-ANN,-AGUILA">Mamay, Joice Ann, Aguila</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/Pajarillo,-Terrence-Jay-F.">Pajarillo, Terrence Jay F.</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/RODRIN,-JOHN-PAUL,-BONITO">Rodrin, John Paul, Bonito</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/Rojas,-john-gabriel">Rojas, John Gabriel</a></li>
+            <li><a href="https://github.com/ELEC2024-DEMACIANS-BSIT-32E1/ELEC2024_DEMACIANS_BSIT_32E1/wiki/SITE-MAP">Site Map</a></li>
+        </ul>
+    </section>
+
+
+</body>
