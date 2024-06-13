@@ -4,6 +4,23 @@
 
 <link rel="stylesheet" href="~/css/quizui.css" />
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const nextButton = document.querySelector(".nextbtn");
+
+        nextButton.addEventListener("click", function () {
+            let sum = 0;
+            const radioButtons = document.querySelectorAll("input[type='radio']:checked");
+            radioButtons.forEach(function (radioButton) {
+                sum += parseInt(radioButton.getAttribute("data-value"));
+            });
+            const nextUrl = "/QuizUI/QuizPage2";
+            const separator = nextUrl.includes("?") ? "&" : "?";
+            window.location.href = nextUrl + separator + "sum=" + sum;
+        });
+    });
+</script>
+
 <body>
     <section class="QuizUI_Page" id="QuizUI_Page">
         <div class="Questionaires">
@@ -91,10 +108,10 @@
             </div>
         </div>
         <div class="divbtn">
-            <a class="nextbtn" asp-area="" asp-controller="QuizUI" asp-action="QuizPage2">
+            <button class="nextbtn" asp-area="" asp-controller="QuizUI" asp-action="QuizPage2">
                 <span class="nexttext">Next</span>
                 <span class="rightarrow">→</span>
-            </a>
+            </button>
         </div>
     </section>
 </body>
