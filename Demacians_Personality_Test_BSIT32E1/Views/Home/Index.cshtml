@@ -80,6 +80,9 @@
     .home-text08 {
         font-size: 24px;
     }
+    .no-underline{
+        text-decoration: none;
+    }
 </style>
 
 <head>
@@ -100,11 +103,16 @@
                     <span>Take the first step today with a personality Test"</span>
                     <br />
                 </span>
+
                 <a type="button" class="home-button button" asp-area="" asp-controller="QuizUI" asp-action="QuizPage1">
+                <a asp-area ="" asp-controller="QuizUI" asp-action="QuizPage1" class="no-underline">
+                <button type="button" class="home-button button">
                     <span class="home-text08">
                         <span>Take A Quiz</span>
                         <br />
                     </span>
+                </button>
+
                 </a>
             </div>
             <img alt="image"

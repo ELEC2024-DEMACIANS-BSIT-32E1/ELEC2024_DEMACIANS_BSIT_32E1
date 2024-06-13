@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3 fixed-top">
             <div class="container-fluid mx-auto" style="max-width: 80%;">
-                <a class="navbar-brand d-flex align-items-center" style="gap: 3rem;" href="#Home">
+                <a class="navbar-brand d-flex align-items-center" style="gap: 3rem;" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="~/images/Logo.png" alt="">
                     <h3>Personality</h3>
                 </a>
@@ -28,10 +28,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">About us</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Personality Type</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Personality" asp-action="PersonalityPage">Personality Type</a>
                         </li>
                         
                     </ul>
@@ -62,9 +62,9 @@
         </div>
 
         <div class="footer_image_socials_container">
-            <a href="#"><img class="one" src="~/images/Facebook.png" alt=""></a>
-           <a href="#"> <img class="two" src="~/images/Twitter.png" alt=""></a>
-            <a href="#"><img class="three" src="~/images/Instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/ecotonevtuber" target="_blank" rel="noopener noreferrer"><img class="one" src="~/images/Facebook.png" alt=""></a>
+                <a href="https://x.com/ecotone_vtuber" target="_blank" rel="noopener noreferrer"> <img class="two" src="~/images/Twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/raikabob" target="_blank" rel="noopener noreferrer"><img class="three" src="~/images/Instagram.png" alt=""></a>
         </div>
     </div>
   </footer>

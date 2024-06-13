@@ -18,6 +18,15 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+        public IActionResult DownloadFileProtagonist()
+        {
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/landingpage.png");
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+
+            return File(fileBytes, "application/pdf", "landingpage.png");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
