@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-.PersonalityPage_Body {
+/* .PersonalityPage_Body {
 
-}
+} */
 
 .Personality_Page {
     display: flex;
@@ -131,7 +131,7 @@
 
 .btn_takequiz {
     width: 12%;
-    height: 140%;
+    height: 143%;
     border-radius: 20px;
     -webkit-border-radius: 20;
     -moz-border-radius: 20;
@@ -140,12 +140,16 @@
     border: none;
     color: white;
     background-color: #88619a;
+    text-decoration: none;
 }
+
+
 
 .btn_takequiz:hover {
     cursor: pointer;
     background-color: #6e4b7f;
     scale: 1.1;
+    color: white;
 }
 
 .Personal_Text_Container h1 {
