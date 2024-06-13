@@ -4,19 +4,65 @@
 
 <link rel="stylesheet" href="~/css/quizui.css" />
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const nextButton = document.querySelector(".nextbtn");
+
+        nextButton.addEventListener("click", function () {
+            // Recalculate the sum
+            let sum = 0;
+            const radioButtons = document.querySelectorAll("input[type='radio']:checked");
+
+            radioButtons.forEach(function (radioButton) {
+                sum += parseInt(radioButton.getAttribute("data-value"));
+            });
+
+            // Get the current page URL
+            const currentPageUrl = window.location.href;
+
+            // Extract the current sum from the URL
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            let existingSum = parseInt(urlSearchParams.get("sum"));
+
+            // Add the current sum to the existing sum
+            existingSum = existingSum || 0;
+            sum += existingSum;
+
+            // Construct the URL for the next page
+            const currentPageNumber = parseInt(currentPageUrl.match(/QuizPage(\d+)/)[1]);
+            const nextPageNumber = currentPageNumber + 1;
+            const nextPageUrl = currentPageUrl.replace(`QuizPage${currentPageNumber}`, `QuizPage${nextPageNumber}`);
+
+            // Construct the parameter string
+            const sumParameter = "sum=" + sum;
+
+            // If the current URL already has a query string, update the sum parameter; otherwise, append it
+            let finalUrl = nextPageUrl;
+            if (finalUrl.includes("?")) {
+                finalUrl = finalUrl.replace(/sum=\d+/, sumParameter);
+            } else {
+                finalUrl += "?" + sumParameter;
+            }
+
+            // Redirect to the next page with the updated sum as a parameter
+            window.location.href = finalUrl;
+        });
+    });
+</script>
+
 <body>
     <section class="QuizUI_Page" id="QuizUI_Page">
         <div class="Questionaires">
             <h3 class="questiontitle">You prioritize and plan tasks effectively, often completing them well before the deadline.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
-                <button class="scale-button green" id="green1" data-value="1"></button>
-                <button class="scale-button green" id="green2" data-value="2"></button>
-                <button class="scale-button green" id="green3" data-value="3"></button>
-                <button class="scale-button white" id="white" data-value="4"></button>
-                <button class="scale-button red" id="red1" data-value="5"></button>
-                <button class="scale-button red" id="red2" data-value="6"></button>
-                <button class="scale-button red" id="red3" data-value="7"></button>
+                <input type="radio" name="question1" class="scale-button green" id="green1" data-value="1">
+                <input type="radio" name="question1" class="scale-button green" id="green2" data-value="2">
+                <input type="radio" name="question1" class="scale-button green" id="green3" data-value="3">
+                <input type="radio" name="question1" class="scale-button white" id="white" data-value="4" checked>
+                <input type="radio" name="question1" class="scale-button red" id="red1" data-value="5">
+                <input type="radio" name="question1" class="scale-button red" id="red2" data-value="6">
+                <input type="radio" name="question1" class="scale-button red" id="red3" data-value="7">
                 <h3 class="Disagreetext">Disagree</h3>
             </div>
         </div>
@@ -24,13 +70,13 @@
             <h3 class="questiontitle">People’s stories and emotions speak louder to you than numbers or data.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
-                <button class="scale-button green" id="green1" data-value="1"></button>
-                <button class="scale-button green" id="green2" data-value="2"></button>
-                <button class="scale-button green" id="green3" data-value="3"></button>
-                <button class="scale-button white" id="white" data-value="4"></button>
-                <button class="scale-button red" id="red1" data-value="5"></button>
-                <button class="scale-button red" id="red2" data-value="6"></button>
-                <button class="scale-button red" id="red3" data-value="7"></button>
+                <input type="radio" name="question2" class="scale-button green" id="green1" data-value="1">
+                <input type="radio" name="question2" class="scale-button green" id="green2" data-value="2">
+                <input type="radio" name="question2" class="scale-button green" id="green3" data-value="3">
+                <input type="radio" name="question2" class="scale-button white" id="white" data-value="4" checked>
+                <input type="radio" name="question2" class="scale-button red" id="red1" data-value="5">
+                <input type="radio" name="question2" class="scale-button red" id="red2" data-value="6">
+                <input type="radio" name="question2" class="scale-button red" id="red3" data-value="7">
                 <h3 class="Disagreetext">Disagree</h3>
             </div>
         </div>
@@ -38,13 +84,13 @@
             <h3 class="questiontitle">You like to use organizing tools like schedules and lists.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
-                <button class="scale-button green" id="green1" data-value="1"></button>
-                <button class="scale-button green" id="green2" data-value="2"></button>
-                <button class="scale-button green" id="green3" data-value="3"></button>
-                <button class="scale-button white" id="white" data-value="4"></button>
-                <button class="scale-button red" id="red1" data-value="5"></button>
-                <button class="scale-button red" id="red2" data-value="6"></button>
-                <button class="scale-button red" id="red3" data-value="7"></button>
+                <input type="radio" name="question3" class="scale-button green" id="green1" data-value="1">
+                <input type="radio" name="question3" class="scale-button green" id="green2" data-value="2">
+                <input type="radio" name="question3" class="scale-button green" id="green3" data-value="3">
+                <input type="radio" name="question3" class="scale-button white" id="white" data-value="4" checked>
+                <input type="radio" name="question3" class="scale-button red" id="red1" data-value="5">
+                <input type="radio" name="question3" class="scale-button red" id="red2" data-value="6">
+                <input type="radio" name="question3" class="scale-button red" id="red3" data-value="7">
                 <h3 class="Disagreetext">Disagree</h3>
             </div>
         </div>
@@ -52,13 +98,13 @@
             <h3 class="questiontitle">Even a small mistake can cause you to doubt your overall abilities and knowledge.</h3>
             <div class="scale">
                 <h2 class="Agreetext">Agree</h2>
-                <button class="scale-button green" id="green1" data-value="1"></button>
-                <button class="scale-button green" id="green2" data-value="2"></button>
-                <button class="scale-button green" id="green3" data-value="3"></button>
-                <button class="scale-button white" id="white" data-value="4"></button>
-                <button class="scale-button red" id="red1" data-value="5"></button>
-                <button class="scale-button red" id="red2" data-value="6"></button>
-                <button class="scale-button red" id="red3" data-value="7"></button>
+                <input type="radio" name="question4" class="scale-button green" id="green1" data-value="1">
+                <input type="radio" name="question4" class="scale-button green" id="green2" data-value="2">
+                <input type="radio" name="question4" class="scale-button green" id="green3" data-value="3">
+                <input type="radio" name="question4" class="scale-button white" id="white" data-value="4" checked>
+                <input type="radio" name="question4" class="scale-button red" id="red1" data-value="5">
+                <input type="radio" name="question4" class="scale-button red" id="red2" data-value="6">
+                <input type="radio" name="question4" class="scale-button red" id="red3" data-value="7">
                 <h3 class="Disagreetext">Disagree</h3>
             </div>
         </div>
@@ -66,13 +112,13 @@
             <h3 class="questiontitle">You feel comfortable just walking up to someone you find interesting and striking up a conversation.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
-                <button class="scale-button green" id="green1" data-value="1"></button>
-                <button class="scale-button green" id="green2" data-value="2"></button>
-                <button class="scale-button green" id="green3" data-value="3"></button>
-                <button class="scale-button white" id="white" data-value="4"></button>
-                <button class="scale-button red" id="red1" data-value="5"></button>
-                <button class="scale-button red" id="red2" data-value="6"></button>
-                <button class="scale-button red" id="red3" data-value="7"></button>
+                <input type="radio" name="question5" class="scale-button green" id="green1" data-value="1">
+                <input type="radio" name="question5" class="scale-button green" id="green2" data-value="2">
+                <input type="radio" name="question5" class="scale-button green" id="green3" data-value="3">
+                <input type="radio" name="question5" class="scale-button white" id="white" data-value="4" checked>
+                <input type="radio" name="question5" class="scale-button red" id="red1" data-value="5">
+                <input type="radio" name="question5" class="scale-button red" id="red2" data-value="6">
+                <input type="radio" name="question5" class="scale-button red" id="red3" data-value="7">
                 <h3 class="Disagreetext">Disagree</h3>
             </div>
          </div>
@@ -80,21 +126,21 @@
             <h3 class="questiontitle">You are not too interested in discussions about various interpretations of creative works.</h3>
             <div class="scale">
                 <h3 class="Agreetext">Agree</h3>
-                <button class="scale-button green" id="green1" data-value="1"></button>
-                <button class="scale-button green" id="green2" data-value="2"></button>
-                <button class="scale-button green" id="green3" data-value="3"></button>
-                <button class="scale-button white" id="white" data-value="4"></button>
-                <button class="scale-button red" id="red1" data-value="5"></button>
-                <button class="scale-button red" id="red2" data-value="6"></button>
-                <button class="scale-button red" id="red3" data-value="7"></button>
+                <input type="radio" name="question6" class="scale-button green" id="green1" data-value="1">
+                <input type="radio" name="question6" class="scale-button green" id="green2" data-value="2">
+                <input type="radio" name="question6" class="scale-button green" id="green3" data-value="3">
+                <input type="radio" name="question6" class="scale-button white" id="white" data-value="4" checked>
+                <input type="radio" name="question6" class="scale-button red" id="red1" data-value="5">
+                <input type="radio" name="question6" class="scale-button red" id="red2" data-value="6">
+                <input type="radio" name="question6" class="scale-button red" id="red3" data-value="7">
                 <h3 class="Disagreetext">Disagree</h3>
             </div>
         </div>
         <div class="divbtn">
-            <button class="nextbtn">
-            <span class="nexttext">Next</span>
-            <span class="rightarrow">→</span>
+            <button class="nextbtn" asp-area="" asp-controller="QuizUI" asp-action="QuizPage3">
+                <span class="nexttext">Next</span>
+                <span class="rightarrow">→</span>
+            </button>
         </div>
-        </button>
     </section>
 </body>
