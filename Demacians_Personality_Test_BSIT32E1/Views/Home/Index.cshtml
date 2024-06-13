@@ -4,7 +4,7 @@
 
 <style>
     html {
-        font-family: Inter;
+        font-family: Inter, sans-serif;
         font-size: 16px;
     }
 
@@ -26,9 +26,8 @@
         display: flex;
         min-height: 100vh;
         align-items: center;
-        justify-content: flex-end; 
-        text-decoration-color: var(--dl-color-theme-secondary1);
-        padding-right: 50px; 
+        justify-content: flex-end;
+        padding-right: 50px;
     }
 
     .home-content {
@@ -41,80 +40,80 @@
     .home-text {
         color: black;
         font-size: 30px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     .home-image {
         position: absolute;
         top: 266px;
-        left: 70px; 
+        left: 70px;
         width: 601px;
         height: 493px;
         object-fit: cover;
     }
 
     .home-button {
-        color: rgb(255, 255, 255);
+        color: white;
         width: 219px;
         height: 99px;
         transition: 0.3s;
-        border-color: #9a79b5;
-        border-width: 8px;
+        border: 8px solid #9a79b5;
         border-radius: 90px;
         background-color: #9a79b5;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
     }
 
         .home-button:hover {
-            animation-name: pulse;
-            animation-delay: 0s;
             background-color: #a43671;
-            animation-duration: 300ms;
-            animation-direction: normal;
-            animation-iteration-count: 1;
-            animation-timing-function: ease;
+            animation: pulse 300ms ease 1;
+            color: white;
         }
 
     .home-text08 {
         font-size: 24px;
     }
-    .no-underline{
-        text-decoration: none;
-    }
+
+    @@keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
 </style>
 
 <head>
     <title>Personality Test</title>
-
-   
 </head>
 <body>
 
-    <div>
-        <div class="home-container">
-            <div class="home-content">
-                <span class="home-text">
-                    <span>"Awareness of one's personality</span>
-                    <br />
-                    <span>is the foundation of all personal growth.</span>
-                    <br />
-                    <span>Take the first step today with a personality Test"</span>
+    <div class="home-container">
+        <div class="home-content">
+            <span class="home-text">
+                <span>"Awareness of one's personality</span>
+                <br />
+                <span>is the foundation of all personal growth.</span>
+                <br />
+                <span>Take the first step today with a personality Test"</span>
+                <br />
+            </span>
+
+            <a type="button" class="home-button" asp-area="" asp-controller="QuizUI" asp-action="QuizPage1">
+                <span class="home-text08">
+                    <span>Take A Quiz</span>
                     <br />
                 </span>
-
-                <a type="button" class="home-button button" asp-area="" asp-controller="QuizUI" asp-action="QuizPage1">
-                    <span class="home-text08">
-                        <span>Take A Quiz</span>
-                        <br />
-                    </span>
-                </a>
-            </div>
-            <img alt="image"
-                 src="/images/yappers.png"
-                 class="home-image" />
+            </a>
         </div>
+        <img alt="image" src="/images/yappers.png" class="home-image" />
     </div>
+
 </body>
 </html>
