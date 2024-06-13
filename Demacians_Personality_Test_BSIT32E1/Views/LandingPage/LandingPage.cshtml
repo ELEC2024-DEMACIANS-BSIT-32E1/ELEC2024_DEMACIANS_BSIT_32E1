@@ -73,6 +73,9 @@
     .socialmedia-logo:img{
         width:80%;
     }
+    .no-underline{
+        text-decoration: none;
+    }
 </style>
 
 <body class="landingpagebody">
@@ -83,6 +86,8 @@
         <p class="description-text">Enthusiastic, creative and sociable free spirits, who can always <br> find a reason to smile.</br>
     </div>
     <div class="download-container">
+        <a asp-controller="LandingPage" asp-action="DownloadFileProtagonist" class="no-underline">
         <button class="downloadbtn">Download</button>
+        </a>
     </div>
 </body>
