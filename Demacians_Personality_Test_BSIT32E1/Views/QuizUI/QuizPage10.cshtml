@@ -29,13 +29,13 @@
             // Send the sum to the controller via AJAX POST request
             $.ajax({
                 type: "POST",
-                url: "/Personality/Direct",
+                url: "/LandingPage/Direct",
                 data: { sum: sum },
                 success: function (response) {
                     // Redirect to the URL returned by the controller
                     switch (response.action) {
                         case "Protagonist":
-                            window.location.href = "/Personality/Protagonist";
+                            window.location.href = "/LandingPage/LandingPage";
                             break;
                         case "PersonalityPage":
                             window.location.href = "/Personality/PersonalityPage";
