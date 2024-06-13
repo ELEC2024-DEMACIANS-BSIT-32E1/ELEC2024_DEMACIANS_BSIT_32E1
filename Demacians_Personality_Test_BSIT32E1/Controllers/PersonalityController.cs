@@ -13,6 +13,16 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             _logger = logger;
         }
 
+        [HttpPost]
+        public IActionResult Direct(int sum)
+        {
+            if (sum >= 60 && sum <= 82)
+            {
+                return Json(new { action = "Protagonist" });
+            }
+            return Json(new { action = "PersonalityPage" });
+        }
+
         public IActionResult PersonalityPage()
         {
             return View();
