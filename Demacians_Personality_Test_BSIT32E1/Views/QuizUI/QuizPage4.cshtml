@@ -4,52 +4,6 @@
 
 <link rel="stylesheet" href="~/css/quizui.css" />
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const nextButton = document.querySelector(".nextbtn");
-
-        nextButton.addEventListener("click", function () {
-            // Recalculate the sum
-            let sum = 0;
-            const radioButtons = document.querySelectorAll("input[type='radio']:checked");
-
-            radioButtons.forEach(function (radioButton) {
-                sum += parseInt(radioButton.getAttribute("data-value"));
-            });
-
-            // Get the current page URL
-            const currentPageUrl = window.location.href;
-
-            // Extract the current sum from the URL
-            const urlSearchParams = new URLSearchParams(window.location.search);
-            let existingSum = parseInt(urlSearchParams.get("sum"));
-
-            // Add the current sum to the existing sum
-            existingSum = existingSum || 0;
-            sum += existingSum;
-
-            // Construct the URL for the next page
-            const currentPageNumber = parseInt(currentPageUrl.match(/QuizPage(\d+)/)[1]);
-            const nextPageNumber = currentPageNumber + 1;
-            const nextPageUrl = currentPageUrl.replace(`QuizPage${currentPageNumber}`, `QuizPage${nextPageNumber}`);
-
-            // Construct the parameter string
-            const sumParameter = "sum=" + sum;
-
-            // If the current URL already has a query string, update the sum parameter; otherwise, append it
-            let finalUrl = nextPageUrl;
-            if (finalUrl.includes("?")) {
-                finalUrl = finalUrl.replace(/sum=\d+/, sumParameter);
-            } else {
-                finalUrl += "?" + sumParameter;
-            }
-
-            // Redirect to the next page with the updated sum as a parameter
-            window.location.href = finalUrl;
-        });
-    });
-</script>
-
 <body>
     <section class="QuizUI_Page" id="QuizUI_Page">
         <div class="Questionaires">
@@ -137,10 +91,10 @@
             </div>
         </div>
         <div class="divbtn">
-            <button class="nextbtn" asp-area="" asp-controller="QuizUI" asp-action="QuizPage5">
+            <a class="nextbtn" asp-area="" asp-controller="QuizUI" asp-action="QuizPage5">
                 <span class="nexttext">Next</span>
                 <span class="rightarrow">→</span>
-            </button>
+            </a>
         </div>
     </section>
 </body>
