@@ -18,6 +18,16 @@ namespace Demacians_Personality_Test_BSIT32E1.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Direct(int sum)
+        {
+            if (sum >= 60 && sum <= 82)
+            {
+                return Json(new { action = "Protagonist" });
+            }
+            return Json(new { action = "PersonalityPage" });
+        }
+
         public IActionResult DownloadFileProtagonist()
         {
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/landingpage.png");
